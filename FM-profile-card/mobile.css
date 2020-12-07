@@ -1,0 +1,5 @@
+body {
+  background: url("images/bg-pattern-top.svg") no-repeat -5vw -800vh,
+    url("images/bg-pattern-bottom.svg") no-repeat 50vw 40vh;
+  background-color: #19a2ae;
+}

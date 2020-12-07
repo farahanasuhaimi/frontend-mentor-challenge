@@ -1,0 +1,147 @@
+/*  Base Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Card Style */
+
+.main-container {
+  margin: 20rem auto;
+  position: relative;
+  height: 508px;
+  width: 916px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+}
+
+.icon-container {
+  flex: 1 1 40rem;
+  position: relative;
+  height: 508px;
+  width: 458px;
+  z-index: 3;
+}
+
+#alias-icon,
+#woman,
+#desktop {
+  position: absolute;
+}
+
+#alias-icon {
+  top: 42%;
+  left: -28%;
+  z-index: 4;
+}
+
+#woman {
+  overflow: hidden;
+  top: 20%;
+  left: -18%;
+  z-index: 2;
+}
+
+#desktop {
+  width: 170%;
+  top: -30%;
+  left: -85%;
+  z-index: 1;
+}
+
+.accordion-container {
+  position: relative;
+  flex: 1 1 40rem;
+  padding: 2rem;
+  height: 508px;
+  width: 458px;
+}
+
+h1 {
+  left: -50%;
+  font-size: 3.5rem;
+  margin-top: 4rem;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+
+.accordion {
+  border: none;
+  background: none;
+  text-decoration: none;
+  padding: 1rem 0rem 0.5rem 0;
+  cursor: pointer;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 100%;
+  font-size: 1.2rem;
+}
+
+.accordion-item {
+  color: black;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid hsl(240, 5%, 91%);
+}
+
+.accordion-item-header:hover {
+  color: orange;
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 0rem;
+  min-height: 3rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: url(/images/icon-arrow-down.svg);
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s ease;
+  font-weight: 700;
+}
+
+.accordion-item-header.active::after {
+  content: url(/images/icon-arrow-down.svg);
+  transform: rotate(180deg);
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-container {
+    height: 80%;
+    width: 80%;
+  }
+}
