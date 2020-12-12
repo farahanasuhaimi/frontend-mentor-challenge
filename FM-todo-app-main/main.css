@@ -1,0 +1,62 @@
+/*  Base Style */
+:root {
+  --mainColor: hsl(0, 0%, 98%);
+  --secondaryColor: hsl(236, 33%, 92%);
+
+  --selectedColor: hsl(233, 11%, 84%);
+  --hoverColor: hsl(236, 9%, 61%);
+  --miscColor: hsl(235, 19%, 35%);
+
+  --backgroundPic: url(/images/bg-desktop-light.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}
+/* Theme Image Style */
+.background-theme {
+  height: 30rem;
+  background: var(--backgroundPic);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -5;
+  top: 0%;
+}
+
+header {
+  height: 150px;
+  width: 530px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: first baseline;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+}
+
+.header-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--mainColor);
+  flex-basis: 0%;
+}

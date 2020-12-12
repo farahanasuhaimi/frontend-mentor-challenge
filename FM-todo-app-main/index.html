@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="/main.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style></style>
+
 </head>
+
 <body>
+  <div class="main-container">
 
-  Todo
+    <section class="background-theme">
+      <img src="/images/bg-desktop-light.jpg" alt="">
+    </section>
 
-  <!-- Add dynamic number --> items left
+    <header>
+      <div class="header-title">
+        TODO
+      </div>
+      <div class="dark-light-mode">
+        <button class="mode"><img id="light-mode" src="/images/icon-moon.svg" alt="light mode"></button>
+      </div>
+    </header>
 
-  All
-  Active 
-  Completed
+    <section class="todo-container">
+      <div class="create-new-todo">
 
-  Clear Completed
+        Create a new todo...
+      </div>
+      <div class="todo-list">
 
-  Drag and drop to reorder list
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="list-details">
+        <div class="list-number">
+          <!-- Add dynamic number --> items left
+
+        </div>
+        <div class="list-selection">
+          All
+          Active
+          Completed
+        </div>
+        <div class="list-clear">
+          Clear Completed
+        </div>
+      </div>
+    </section>
+
+    <footer class="instruction">
+      Drag and drop to reorder list
+
+    </footer>
   </div>
+
 </body>
+
 </html>
